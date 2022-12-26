@@ -1,0 +1,41 @@
+﻿@model DogViewModel
+
+
+<h1>Create</h1>
+
+<hr />
+
+<div class="row">
+    <div class="col-6">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h5>Create new num</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-controller="HelloWorld" asp-action="CreateNum" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">First num</label>
+                        <input asp-for=firstNum type="number" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Second num</label>
+                        <input asp-for=secNum type ="number" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-footer">
+            </div>
+
+        </div>
+
+    </div>
+</div>
